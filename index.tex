@@ -1,0 +1,69 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[portuges]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage[]{csquotes}
+
+\author{Dmitry "Nix" Rocha}
+\title{Aprendendo Python com testes}
+
+% numeração dos slides por section
+\setbeamertemplate{footline}[frame number]
+% transparencia nos overlays
+\setbeamercovered{transparent}
+% Desativando os botoes de navegacao
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{hyperref}
+\begin{document}
+  \begin{frame}{}
+    \titlepage
+  \end{frame}
+
+  \begin{frame}{su - mario}
+    \tableofcontents
+  \end{frame}
+
+  \section{O que é teste automatizado de software?}
+
+  \begin{frame}{Definição}
+    \begin{block}{Teste}<1->
+      É algo que testo =/
+    \end{block}
+
+    \begin{block}{Automatizado}<2->
+      É algo que automatizo :P
+    \end{block}
+
+    \begin{block}{Software}<3->
+      Conjunto de instruções.
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Chuck Norris aprova}
+    \pgfdeclareimage[width=5cm]{approved}{approved}
+    \pgfuseimage{approved}<1>
+  \end{frame}
+
+  \begin{frame}{Outra Definição}
+\blockquote[{\cite[Wikipedia]{_test_2014}}]{
+In software testing, test automation is the use of special software (separate
+from the software being tested) to control the execution of tests and the
+comparison of actual outcomes with predicted outcomes. Test automation can
+automate some repetitive but necessary tasks in a formalized testing process
+already in place, or add additional testing that would be difficult to perform
+manually.
+}
+  \end{frame}
+
+  \section{Exemplos e casos de uso com Python}
+
+  \begin{frame}{fibonacci}
+    Sequência de Fibonacci :)
+  \end{frame}
+
+  \bibliographystyle{plain}
+  \bibliography{Items}
+\end{document}
