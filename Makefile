@@ -1,17 +1,17 @@
 OUTPUT = fundamentos-resumo
+COMMAND= pdflatex -shell-escape -interaction=nonstopmode index.tex
 
 all:
 	sed '/url =/s/url =/howpublished ={\\url/g; /howpublished =/s/},/}},/g;/note/g' ExportedItems.bib > Items.bib
-	pdflatex -shell-escape index.tex
+	$(COMMAND)
 	bibtex index
-	pdflatex -shell-escape index.tex
-	pdflatex -shell-escape index.tex
-	#mv index.pdf ${HOME}/Documents/Latex/$(OUTPUT).pdf
+	$(COMMAND)
 	make clean
 
 clean:
 	rm -rf *.aux *.bbl *.toc *.out *.log *.nls *.nlo *.lof *.lot *.blg *.ilg *.nav *.snm
 
-show:
-	make
+talk:
+	rm index.pdf
+	make 1>/dev/null 2>/dev/null
 	evince --page-index 1 --presentation index.pdf
