@@ -1,39 +1,20 @@
 \documentclass[]{beamer}
 
-% Use black
-\setbeamercolor{block body}{bg=normal text.bg!90!black}
-\setbeamercolor{block body example}{bg=normal text.bg!90!black}
-\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!white}
-\setbeamercolor{block title}{bg=black}
-\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!white}
-\setbeamercolor{fine separation line}{}
-\setbeamercolor{frametitle}{fg=brown}
-\setbeamercolor{item projected}{fg=white}
-\setbeamercolor{normal text}{bg=black,fg=white}
-\setbeamercolor{separation line}{}
-\setbeamercolor{structure}{bg=black,fg=white}
-\setbeamercolor{title}{fg=white}
-\setbeamercolor{titlelike}{fg=white}
-%
-
 \usepackage[utf8]{inputenc}
 \usepackage[portuges]{babel}
 \usepackage[T1]{fontenc}
-
+\usepackage{hyperref}
 \usepackage[]{csquotes}
+
+\setbeamertemplate{footline}[page number]
+\setbeamercovered{transparent}
+\beamertemplatenavigationsymbolsempty
+
+\include{black-on-white}
 
 \author{Dmitry "Nix" Rocha}
 \title{Aprendendo Python com testes}
 \institute{ /(guru|pug-)pi/i }
-
-\setbeamertemplate{footline}[page number]
-
-% transparencia nos overlays
-\setbeamercovered{transparent}
-% Desativando os botoes de navegacao
-\beamertemplatenavigationsymbolsempty
-
-\usepackage{hyperref}
 
 \begin{document}
   \begin{frame}{}
@@ -70,14 +51,15 @@
     \pause
   \end{frame}
 
+  \setbeamercolor{normal text}{bg=white,fg=black}
   \begin{frame}{}
-    %\pgfdeclareimage[width=5cm]{pokerface}{images/pokerface}
-    %\pgfuseimage{pokerface}
     \begin{center}
       \includegraphics[width=5cm]{images/pokerface}
     \end{center}
   \end{frame}
 
+  % back to black-on-white
+  \setbeamercolor{normal text}{bg=black,fg=white}
   \begin{frame}{Outra Definição}
 \blockquote[{\cite[Wikipedia]{_test_2014}}]{
 In software testing, test automation is the use of special software (separate
