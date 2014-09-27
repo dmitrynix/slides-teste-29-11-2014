@@ -1,4 +1,20 @@
-\documentclass{beamer}
+\documentclass[]{beamer}
+
+% Use black
+\setbeamercolor{block body}{bg=normal text.bg!90!black}
+\setbeamercolor{block body example}{bg=normal text.bg!90!black}
+\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!white}
+\setbeamercolor{block title}{bg=black}
+\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!white}
+\setbeamercolor{fine separation line}{}
+\setbeamercolor{frametitle}{fg=brown}
+\setbeamercolor{item projected}{fg=white}
+\setbeamercolor{normal text}{bg=black,fg=white}
+\setbeamercolor{separation line}{}
+\setbeamercolor{structure}{bg=black,fg=white}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{titlelike}{fg=white}
+%
 
 \usepackage[utf8]{inputenc}
 \usepackage[portuges]{babel}
@@ -8,15 +24,17 @@
 
 \author{Dmitry "Nix" Rocha}
 \title{Aprendendo Python com testes}
+\institute{ /(guru|pug-)pi/i }
 
-% numeração dos slides por section
-\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}[page number]
+
 % transparencia nos overlays
 \setbeamercovered{transparent}
 % Desativando os botoes de navegacao
 \beamertemplatenavigationsymbolsempty
 
 \usepackage{hyperref}
+
 \begin{document}
   \begin{frame}{}
     \titlepage
@@ -28,23 +46,36 @@
 
   \section{O que é teste automatizado de software?}
 
-  \begin{frame}{Definição}
-    \begin{block}{Teste}<1->
-      É algo que testo =/
-    \end{block}
-
-    \begin{block}{Automatizado}<2->
-      É algo que automatizo :P
-    \end{block}
-
-    \begin{block}{Software}<3->
-      Conjunto de instruções.
-    \end{block}
+  \subsection*{Definição}
+  \begin{frame}
+    \begin{center}
+      \Huge Definição
+    \end{center}
   \end{frame}
 
-  \begin{frame}{Chuck Norris aprova}
-    \pgfdeclareimage[width=5cm]{approved}{approved}
-    \pgfuseimage{approved}<1>
+  \begin{frame}{}
+    \begin{block}{Teste}
+      É algo que testo =/
+    \end{block}
+    \pause
+
+    \begin{block}{Automatizado}
+      É algo que automatizo :P
+    \end{block}
+    \pause
+
+    \begin{block}{Software}
+      Conjunto de instruções.
+    \end{block}
+    \pause
+  \end{frame}
+
+  \begin{frame}{}
+    %\pgfdeclareimage[width=5cm]{pokerface}{images/pokerface}
+    %\pgfuseimage{pokerface}
+    \begin{center}
+      \includegraphics[width=5cm]{images/pokerface}
+    \end{center}
   \end{frame}
 
   \begin{frame}{Outra Definição}
