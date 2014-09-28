@@ -10,6 +10,7 @@
 \setbeamercovered{transparent}
 \beamertemplatenavigationsymbolsempty
 
+\def\BLACKBG{true}
 \include{black-on-white}
 
 \author{Dmitry "Nix" Rocha}
@@ -27,14 +28,14 @@
 
   \section{O que é teste automatizado de software?}
 
-  \subsection*{Definição}
   \begin{frame}
     \begin{center}
-      \Huge Definição
+      \Huge Definições
     \end{center}
   \end{frame}
 
-  \begin{frame}{}
+  \subsection*{Definição - 1}
+  \begin{frame}
     \begin{block}{Teste}
       É algo que testo =/
     \end{block}
@@ -51,26 +52,34 @@
     \pause
   \end{frame}
 
-  \setbeamercolor{normal text}{bg=white,fg=black}
-  \begin{frame}{}
+  \invertbgcolor
+  \begin{frame}
     \begin{center}
       \includegraphics[width=5cm]{images/pokerface}
     \end{center}
   \end{frame}
 
-  % back to black-on-white
-  \setbeamercolor{normal text}{bg=black,fg=white}
-  \begin{frame}{Outra Definição}
-\blockquote[{\cite[Wikipedia]{_test_2014}}]{
-In software testing, test automation is the use of special software (separate
-from the software being tested) to control the execution of tests and the
-comparison of actual outcomes with predicted outcomes. Test automation can
-automate some repetitive but necessary tasks in a formalized testing process
-already in place, or add additional testing that would be difficult to perform
-manually.
-}
+  \subsection*{Definição - 2}
+  \backbgcolor
+  \begin{frame}
+    \blockquote[{\cite[Wikipedia]{_test_2014}}]{
+      In software testing, test automation is the use of special software
+      (separate from the software being tested) to control the execution of
+      tests and the comparison of actual outcomes with predicted outcomes. Test
+      automation can automate some repetitive but necessary tasks in a
+      formalized testing process already in place, or add additional testing
+      that would be difficult to perform manually.
+    }
   \end{frame}
 
+  \invertbgcolor
+  \begin{frame}{}
+    \begin{center}
+      \includegraphics[width=5cm]{images/likeasir}
+    \end{center}
+  \end{frame}
+
+  \backbgcolor
   \section{Exemplos e casos de uso com Python}
 
   \begin{frame}{fibonacci}

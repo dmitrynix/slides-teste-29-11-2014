@@ -14,4 +14,4 @@ clean:
 talk:
 	rm index.pdf
 	make 1>/dev/null 2>/dev/null
-	evince --page-index 1 --presentation index.pdf
+	evince --page-index 1 --presentation index.pdf 2>/dev/null
