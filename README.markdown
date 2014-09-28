@@ -1,3 +1,3 @@
 Install:
 
-    % tlmgr install beamer ms amscls csquotes etoolbox nameref
+    % tlmgr install beamer ms amscls csquotes etoolbox

@@ -10,7 +10,7 @@
 \setbeamercovered{transparent}
 \beamertemplatenavigationsymbolsempty
 
-\def\BLACKBG{true}
+%\def\BLACKBG{true}
 \include{black-on-white}
 
 \author{Dmitry "Nix" Rocha}
@@ -18,12 +18,18 @@
 \institute{ /(guru|pug-)pi/i }
 
 \begin{document}
-  \begin{frame}{}
+  \begin{frame}[label=titlepage]
     \titlepage
+    % Apresentação.
+    %
+    % Sobre mim (Informática, Matemática, GURUPI/PUG-PI)
   \end{frame}
 
   \begin{frame}{su - mario}
     \tableofcontents
+    % Dividi a talk em duas:
+    %  1. Fundamentação teórica
+    %  2. Prática (Python/Ruby)
   \end{frame}
 
   \section{O que é teste automatizado de software?}
@@ -34,20 +40,14 @@
     \end{center}
   \end{frame}
 
-  \subsection*{Definição - Livro}\label{def1}
+  \subsection*{Definição de Livro}\label{def1}
   \include{definicao-livro}
 
-  \subsection*{Definição - Wikipedia}
+  \subsection*{Definição da Wikipedia}
   \include{definicao-wikipedia}
 
-  \subsection*{Definição - Minha}
+  \subsection*{Minha definição}
   \include{definicao-minha}
-
-  %\begin{frame}{}
-    %\begin{center}
-      %\includegraphics[width=5cm]{images/likeasir}
-    %\end{center}
-  %\end{frame}
 
   \backbgcolor
   \section{Exemplos e casos de uso com Python}
@@ -58,4 +58,11 @@
 
   \bibliographystyle{plain}
   \bibliography{Items}
+
+  \begin{frame}{}
+    \begin{center}
+      \includegraphics[width=5cm]{images/isso-e-tudo}
+    \end{center}
+    % http://lokotopia.com.br/wp-content/uploads/2013/06/013-stefan-asafti-marcas-cartoon-isso-e-tudo.jpg
+  \end{frame}
 \end{document}
