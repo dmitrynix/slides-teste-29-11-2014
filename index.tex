@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[portuges]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage[]{csquotes}
 
 \setbeamertemplate{footline}[page number]
@@ -14,7 +14,7 @@
 \include{black-on-white}
 
 \author{Dmitry "Nix" Rocha}
-\title{Aprendendo Python com testes}
+\title{Testes, testes everywhere}
 \institute{ /(guru|pug-)pi/i }
 
 \begin{document}
@@ -34,50 +34,20 @@
     \end{center}
   \end{frame}
 
-  \subsection*{Definição - 1}
-  \begin{frame}
-    \begin{block}{Teste}
-      É algo que testo =/
-    \end{block}
-    \pause
+  \subsection*{Definição - Livro}\label{def1}
+  \include{definicao-livro}
 
-    \begin{block}{Automatizado}
-      É algo que automatizo :P
-    \end{block}
-    \pause
+  \subsection*{Definição - Wikipedia}
+  \include{definicao-wikipedia}
 
-    \begin{block}{Software}
-      Conjunto de instruções.
-    \end{block}
-    \pause
-  \end{frame}
+  \subsection*{Definição - Minha}
+  \include{definicao-minha}
 
-  \invertbgcolor
-  \begin{frame}
-    \begin{center}
-      \includegraphics[width=5cm]{images/pokerface}
-    \end{center}
-  \end{frame}
-
-  \subsection*{Definição - 2}
-  \backbgcolor
-  \begin{frame}
-    \blockquote[{\cite[Wikipedia]{_test_2014}}]{
-      In software testing, test automation is the use of special software
-      (separate from the software being tested) to control the execution of
-      tests and the comparison of actual outcomes with predicted outcomes. Test
-      automation can automate some repetitive but necessary tasks in a
-      formalized testing process already in place, or add additional testing
-      that would be difficult to perform manually.
-    }
-  \end{frame}
-
-  \invertbgcolor
-  \begin{frame}{}
-    \begin{center}
-      \includegraphics[width=5cm]{images/likeasir}
-    \end{center}
-  \end{frame}
+  %\begin{frame}{}
+    %\begin{center}
+      %\includegraphics[width=5cm]{images/likeasir}
+    %\end{center}
+  %\end{frame}
 
   \backbgcolor
   \section{Exemplos e casos de uso com Python}

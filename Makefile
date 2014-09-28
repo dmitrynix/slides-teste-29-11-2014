@@ -6,6 +6,7 @@ all:
 	$(COMMAND)
 	bibtex index
 	$(COMMAND)
+	$(COMMAND)
 	make clean
 
 clean:
