@@ -1,4 +1,5 @@
 \documentclass[]{beamer}
+\mode<presentation>
 
 \usepackage[utf8]{inputenc}
 \usepackage[portuges]{babel}
@@ -13,23 +14,26 @@
 %\def\BLACKBG{true}
 \include{black-on-white}
 
-\author{Dmitry "Nix" Rocha}
+\author[Dmitry]{Dmitry Nix \\ \texttt{@dmitrynix}}
+
 \title{Testes, testes everywhere}
 \institute{ /(guru|pug-)pi/i }
 
 \begin{document}
-  \begin{frame}[label=titlepage]
+  \begin{frame}
     \titlepage
-    % Apresentação.
-    %
-    % Sobre mim (Informática, Matemática, GURUPI/PUG-PI)
+    % Sobre mim: 
+    % - Informática;
+    % - Matemática;
+    % - GURUPI/PUG-PI;
+    % - scoola;
   \end{frame}
 
   \begin{frame}{su - mario}
     \tableofcontents
     % Dividi a talk em duas:
     %  1. Fundamentação teórica
-    %  2. Prática (Python/Ruby)
+    %  2. Prática com Ruby, também pode ser chamada de boas práticas
   \end{frame}
 
   \section{O que é teste automatizado de software?}
@@ -50,7 +54,7 @@
   \include{definicao-minha}
 
   \backbgcolor
-  \section{Exemplos e casos de uso com Python}
+  \section{Exemplos e casos de uso com Ruby}
 
   \begin{frame}{fibonacci}
     Sequência de Fibonacci :)
